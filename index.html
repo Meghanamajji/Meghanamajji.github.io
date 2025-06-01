@@ -1,122 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My Portfolio</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            margin: 0;
-            background: #f4f4f4;
-            color: #222;
-        }
-        header {
-            background: #222;
-            color: #fff;
-            padding: 2rem 0;
-            text-align: center;
-        }
-        nav {
-            margin-top: 1rem;
-        }
-        nav a {
-            color: #fff;
-            margin: 0 1rem;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .container {
-            max-width: 900px;
-            margin: 2rem auto;
-            background: #fff;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-        }
-        h2 {
-            color: #333;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 0.5rem;
-        }
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-            margin-top: 1rem;
-        }
-        .project {
-            background: #fafafa;
-            border: 1px solid #eee;
-            border-radius: 6px;
-            padding: 1rem;
-            transition: box-shadow 0.2s;
-        }
-        .project:hover {
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-        }
-        footer {
-            text-align: center;
-            color: #888;
-            padding: 2rem 0 1rem 0;
-            font-size: 0.9rem;
-        }
-        @media (max-width: 600px) {
-            .container {
-                padding: 1rem;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Meghana Majji | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 </head>
 <body>
-    <header>
-        <h1>Your Name</h1>
-        <p>Web Developer &amp; Designer</p>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-    <div class="container">
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-                Hello! I'm a passionate web developer with experience in building modern, responsive websites and applications. I love turning ideas into reality using code.
-            </p>
-        </section>
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="projects">
-                <div class="project">
-                    <h3>Project One</h3>
-                    <p>A brief description of your project goes here.</p>
-                    <a href="#" target="_blank">View Project</a>
-                </div>
-                <div class="project">
-                    <h3>Project Two</h3>
-                    <p>A brief description of your project goes here.</p>
-                    <a href="#" target="_blank">View Project</a>
-                </div>
-                <div class="project">
-                    <h3>Project Three</h3>
-                    <p>A brief description of your project goes here.</p>
-                    <a href="#" target="_blank">View Project</a>
-                </div>
-            </div>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>
-                Email: <a href="mailto:your.email@example.com">your.email@example.com</a>
-            </p>
-            <p>
-                LinkedIn: <a href="#" target="_blank">Your LinkedIn</a>
-                </p>
-        </section>
+
+  <!-- Header -->
+  <header>
+    <nav>
+      <h1>Meghana Majji</h1>
+      <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="darkModeBtn">Dark Mode</button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="hero-content">
+      <h1>Hello, I'm Meghana</h1>
+      <h2><span class="typed-text"></span></h2>
+      <a href="#projects" class="btn-primary">View Projects</a>
     </div>
-    <footer>
-        &copy; 2024 Your Name. All rights reserved.
-    </footer>
+    <div class="hero-image">
+      <img src="C:\Users\Ajay kumar\Documents\portfolio\Meghanamajji.github.io\m1.jpg" alt="Meghana Image">
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>
+      I'm a B.Tech CSE student at Raghu Engineering College, passionate about Data Science, AI, and Web Development.
+      Skilled in Python, Java, and C with hands-on experience in real-time projects.
+    </p>
+    <ul>
+      <li><strong>Languages:</strong> Python, Java, C, HTML, CSS, JavaScript</li>
+      <li><strong>Frameworks:</strong> Django, Bootstrap, Tkinter</li>
+      <li><strong>Libraries:</strong> Pandas, NumPy</li>
+      <li><strong>Databases:</strong> MySQL, SQLite</li>
+      <li><strong>Tools:</strong> Git, VS Code, Anaconda</li>
+    </ul>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section" id="projects" data-aos="fade-up">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src=file:///C:/Users/Ajay%20kumar/Documents/portfolio/Meghanamajji.github.io/Diabetes-Prediction-Using-Machine-Learning.webp alt="Diabetes Project" />
+        <div class="project-info">
+          <h3>Diabetes Prediction System</h3>
+          <p>Machine Learning model using SVM to predict diabetes from health data.</p>
+          <a href="https://github.com/Meghanamajji/diabetes-prediction" target="_blank">GitHub Repo</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="C:\Users\Ajay kumar\Documents\portfolio\Meghanamajji.github.io\snake.jpg" alt="Snake Game">
+        <div class="project-info">
+          <h3>Snake Game</h3>
+          <p>Fun classic Snake game built with Python and Tkinter.</p>
+          <a href="https://github.com/Meghanamajji/snake-game" target="_blank">GitHub Repo</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="C:\Users\Ajay kumar\Documents\portfolio\Meghanamajji.github.io\Portfolio-Desk.jpg" alt="Portfolio Site">
+        <div class="project-info">
+          <h3>Portfolio Website</h3>
+          <p>Fully responsive portfolio site using HTML, CSS, and JS.</p>
+          <a href="#">You Are Here</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact" data-aos="fade-up">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <div class="contact-info">
+      <p>
+        📧 <a href="mailto:majjimeghana96@gmail.com">majjimeghana96@gmail.com</a><br />
+        🔗 <a href="https://linkedin.com/in/meghana-majji-08634a2b2" target="_blank">LinkedIn</a> |
+        <a href="https://github.com/Meghanamajji" target="_blank">GitHub</a>
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Meghana Majji. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+  <script>AOS.init();</script>
 </body>
 </html>
