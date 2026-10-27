@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Meghana Majji | Software Engineer, Python Developer, AI/ML</title>
+<meta name="description" content="Portfolio of Meghana Majji, a Computer Science graduate building Python, backend and applied AI/ML projects. Open to entry-level software engineering roles.">
+<meta name="theme-color" content="#0d0f14">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230d0f14'/%3E%3Ctext x='50' y='68' font-size='56' text-anchor='middle' fill='%237c8cff' font-family='sans-serif' font-weight='700'%3EM%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<style>
+:root{--bg:#0d0f14;--bg2:#12151c;--line:#232838;--tx:#e8eaf2;--mut:#9aa1b5;--blue:#4f7cff;--vio:#8b5cf6;--cy:#22d3ee;color-scheme:dark;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.65 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased;
+background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:56px 56px}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--cy);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+header.nav{position:sticky;top:0;z-index:20;padding-top:env(safe-area-inset-top,0px);background:rgba(13,15,20,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-weight:700;text-decoration:none;letter-spacing:-.01em}
+.nav ul{display:flex;gap:6px;list-style:none;margin:0;padding:0}
+.nav ul a{display:block;padding:8px 12px;border-radius:8px;color:var(--mut);text-decoration:none;font-size:14px;font-weight:500}
+.nav ul a:hover{color:var(--tx);background:var(--bg2)}
+section{padding:96px 0}
+h1,h2,h3{line-height:1.15;letter-spacing:-.02em;margin:0}
+h2{font-size:clamp(28px,4vw,40px);margin-bottom:12px}
+.lead{color:var(--mut);max-width:62ch;margin:0 0 40px}
+.hero{padding:72px 0 88px}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.tag{font-size:12px;font-weight:600;letter-spacing:.08em;color:var(--cy);margin:0 0 20px}
+h1{font-size:clamp(38px,6vw,64px);font-weight:800;margin-bottom:22px;background:linear-gradient(120deg,#fff 30%,#a5b4ff 70%,#67e8f9);-webkit-background-clip:text;background-clip:text;color:transparent}
+.intro{color:var(--mut);max-width:56ch;margin:0 0 30px}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:26px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:10px;font:600 15px Inter,sans-serif;text-decoration:none;border:1px solid var(--line);background:var(--bg2);color:var(--tx);cursor:pointer}
+.btn:hover{border-color:#3a4263}
+.btn.pri{background:linear-gradient(135deg,var(--blue),var(--vio));border-color:transparent;color:#fff}
+.btn.pri:hover{filter:brightness(1.1)}
+.icons{display:flex;gap:10px}
+.icons a{width:42px;height:42px;display:grid;place-items:center;border:1px solid var(--line);border-radius:10px;color:var(--mut)}
+.icons a:hover{color:var(--tx);border-color:#3a4263}
+.icons svg{width:20px;height:20px;fill:currentColor}
+.note{font-size:13px;color:#fbbf24;margin:12px 0 0;min-height:1.4em}
+.art{border:1px solid var(--line);border-radius:20px;background:radial-gradient(120% 90% at 80% 0,rgba(139,92,246,.18),transparent 60%),var(--bg2);padding:14px;box-shadow:0 0 60px rgba(79,124,255,.12)}
+.art svg{width:100%;height:auto;display:block}
+.pulse{animation:pulse 3.2s ease-in-out infinite}
+@keyframes pulse{50%{opacity:.45}}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.about p{color:var(--mut);margin:0 0 16px}
+.facts{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.facts li{padding:14px 16px;border-left:2px solid var(--vio);background:var(--bg2);border-radius:0 10px 10px 0;font-size:15px}
+.facts b{display:block;font-size:13px;color:var(--mut);font-weight:500}
+.grid{display:grid;grid-template-columns:repeat(6,1fr);gap:20px}
+.card{grid-column:span 2;background:var(--bg2);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
+.card.big{grid-column:span 3}
+.card.big .vis{height:180px}
+.card:hover{border-color:#36406a}
+.vis{height:130px;background:linear-gradient(135deg,rgba(79,124,255,.14),rgba(139,92,246,.1));border-bottom:1px solid var(--line);display:grid;place-items:center}
+.vis svg{height:84%;width:auto;max-width:92%}
+.body{padding:20px;display:flex;flex-direction:column;gap:12px;flex:1}
+.cat{font-size:13px;color:var(--cy);font-weight:500;margin:0}
+.card h3{font-size:20px}
+.card p{margin:0;color:var(--mut);font-size:14.5px}
+.card p b{color:var(--tx);font-weight:600}
+.chips{display:flex;flex-wrap:wrap;gap:6px;list-style:none;margin:0;padding:0}
+.chips li{font-size:12px;padding:3px 9px;border:1px solid var(--line);border-radius:999px;color:#c3c9dd}
+details{border-top:1px solid var(--line);padding-top:10px}
+summary{cursor:pointer;font-size:14px;font-weight:600;color:#aab8ff;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"+ ";}
+details[open] summary::before{content:"– "}
+details ul{margin:10px 0 0;padding-left:18px;color:var(--mut);font-size:14px}
+details li{margin-bottom:4px}
+.status{font-size:13px;color:#fbbf24;margin-top:8px!important}
+.links{margin-top:auto;padding-top:6px;display:flex;gap:14px;font-size:14px;font-weight:600}
+.links a{color:#aab8ff}
+.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.skill{border:1px solid var(--line);background:var(--bg2);border-radius:14px;padding:20px}
+.skill h3{font-size:16px;margin-bottom:12px}
+.tl{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.item{border:1px solid var(--line);background:var(--bg2);border-radius:14px;padding:20px}
+.item h3{font-size:17px;margin-bottom:6px}
+.item p{margin:0;color:var(--mut);font-size:14.5px}
+.sub{font-size:18px;margin:36px 0 14px}
+.contact{text-align:center;border:1px solid var(--line);border-radius:24px;padding:64px 24px;background:radial-gradient(80% 120% at 50% 0,rgba(79,124,255,.18),transparent 70%),var(--bg2)}
+.contact p{color:var(--mut);max-width:56ch;margin:0 auto 28px}
+.contact .btns,.contact .icons{justify-content:center}
+.mail{font-size:14px;color:var(--mut);margin-top:22px}
+footer{padding:32px 0;text-align:center;color:var(--mut);font-size:13px}
+.hero .wrap>*{animation:in .8s both}
+.hero .wrap>*:nth-child(2){animation-delay:.15s}
+@keyframes in{from{opacity:0;transform:translateY(14px)}}
+@media(max-width:900px){.hero .wrap,.about{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.card,.card.big{grid-column:span 1}.skills{grid-template-columns:1fr 1fr}.nav ul{display:none}}
+@media(max-width:600px){.grid,.skills,.tl{grid-template-columns:1fr}section{padding:64px 0}.btn{flex:1 1 100%;justify-content:center}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header class="nav"><div class="wrap">
+<a class="logo" href="#top">Meghana Majji</a>
+<nav aria-label="Primary"><ul>
+<li><a href="#about">About</a></li><li><a href="#projects">Projects</a></li><li><a href="#skills">Skills</a></li><li><a href="#experience">Experience</a></li><li><a href="#education">Education</a></li><li><a href="#contact">Contact</a></li>
+</ul></nav></div></header>
+
+<main id="top">
+<section class="hero"><div class="wrap">
+<div>
+<p class="tag">COMPUTER SCIENCE GRADUATE · SOFTWARE DEVELOPMENT · AI/ML</p>
+<h1>Building intelligent solutions through code.</h1>
+<p class="intro">I’m Meghana Majji, a Computer Science graduate passionate about Python development, backend engineering, and practical AI/ML applications. I enjoy transforming ideas into useful software through problem-solving, experimentation, and continuous learning.</p>
+<div class="btns">
+<a class="btn pri" href="#projects">Explore My Projects</a>
+<a class="btn" href="#contact">Contact Me</a>
+</div>
+<div class="icons">
+<a href="https://github.com/Meghanamajji" aria-label="GitHub profile" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 .5A11.5 11.5 0 0 0 8.4 22.9c.6.1.8-.2.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.200 1.8 1.200 1 1.800 2.700 1.300 3.400 1 .1-.8.4-1.300.7-1.600-2.600-.3-5.300-1.300-5.300-5.700 0-1.300.5-2.300 1.200-3.100-.1-.3-.5-1.500.1-3.100 0 0 1-.3 3.200 1.200a11 11 0 0 1 5.800 0C17.200 4.800 18.200 5.100 18.200 5.100c.6 1.600.2 2.800.1 3.100.8.800 1.200 1.800 1.200 3.100 0 4.400-2.700 5.400-5.300 5.700.4.400.8 1.100.8 2.200v3.300c0 .3.2.7.8.6A11.500 11.500 0 0 0 12 .5z"/></svg></a>
+<a href="https://www.linkedin.com/in/meghana-majji-08634a2b2" aria-label="LinkedIn profile" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M20.4 20.4h-3.600v-5.600c0-1.300 0-3-1.800-3s-2.100 1.400-2.100 2.900v5.700H9.300V9h3.400v1.600c.5-.9 1.600-1.800 3.400-1.800 3.600 0 4.300 2.400 4.300 5.500v6.100zM5.300 7.400a2.100 2.100 0 1 1 0-4.200 2.100 2.100 0 0 1 0 4.200zM7.100 20.400H3.600V9h3.500v11.400zM22.200 0H1.800C.8 0 0 .8 0 1.700v20.600c0 .9.8 1.700 1.800 1.700h20.400c1 0 1.800-.8 1.800-1.700V1.700C24 .8 23.200 0 22.200 0z"/></svg></a>
+<a href="https://g.dev/Meghana_Majji" aria-label="Google Developer profile" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 11v2.800h6.600c-.3 1.600-2 4.700-6.600 4.700a7.200 7.200 0 0 1 0-14.400c2.300 0 3.800 1 4.600 1.800l2.100-2.100A10 10 0 0 0 12 2a10 10 0 1 0 0 20c5.800 0 9.600-4 9.600-9.700 0-.7-.1-1.100-.2-1.600H12z"/></svg></a>
+</div>
+</div>
+<div class="art" id="art" aria-hidden="true">
+<canvas id="gl"></canvas>
+<svg viewBox="0 0 440 400" fill="none">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#4f7cff"/><stop offset="1" stop-color="#8b5cf6"/></linearGradient></defs>
+<g stroke="#2c3350" stroke-width="1.5"><path d="M220 200L90 90M220 200L350 80M220 200L80 290M220 200L360 300M90 90L350 80M80 290L360 300M90 90L80 290M350 80L360 300"/></g>
+<g class="pulse" stroke="url(#g)" stroke-width="2"><path d="M220 200L90 90M220 200L360 300"/></g>
+<circle cx="220" cy="200" r="46" fill="#161a26" stroke="url(#g)" stroke-width="2"/>
+<text x="220" y="207" text-anchor="middle" fill="#cfd6ff" font-family="monospace" font-size="20">&lt;/&gt;</text>
+<g fill="#161a26" stroke="#4f7cff" stroke-width="1.5"><circle cx="90" cy="90" r="24"/><circle cx="350" cy="80" r="24" stroke="#8b5cf6"/><circle cx="80" cy="290" r="24" stroke="#22d3ee"/><circle cx="360" cy="300" r="24"/></g>
+<g fill="#9aa1b5" font-family="monospace" font-size="11" text-anchor="middle"><text x="90" y="94">API</text><text x="350" y="84">ML</text><text x="80" y="294">DB</text><text x="360" y="304">CV</text></g>
+<g font-family="monospace" font-size="11" fill="#5d6685"><text x="24" y="386">def build(idea): return software</text></g>
+</svg></div>
+</div></section>
+
+<section id="about"><div class="wrap">
+<h2>About</h2>
+<div class="about">
+<div>
+<p>I recently completed my B.Tech in Computer Science and Engineering and I’m looking for an entry-level software engineering role where I can work on practical products.</p>
+<p>I’m most interested in Python development, backend systems built with APIs and databases, and applying machine learning and AI to real problems such as document processing and computer vision.</p>
+<p>I like breaking problems into small, testable pieces, learning from experiments, and writing software that behaves reliably. I work well with others and keep learning new tools as projects require them.</p>
+</div>
+<ul class="facts">
+<li><b>Based in</b>Vizianagaram, Andhra Pradesh, India</li>
+<li><b>Looking for</b>Python Developer, Backend Developer, Software Engineer, Entry-Level AI/ML Engineer, Junior Full-Stack Developer</li>
+<li><b>Focus areas</b>Python, backend APIs, machine learning, computer vision</li>
+</ul>
+</div></div></section>
+
+<section id="projects"><div class="wrap">
+<h2>Projects</h2>
+<p class="lead">Seven projects across backend engineering, applied AI, testing and computer vision. Open any card for the details.</p>
+<div class="grid" id="grid"></div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+<h2>Technical skills</h2>
+<p class="lead">Tools I have learned and applied in coursework, internships and projects.</p>
+<div class="skills" id="skills-grid"></div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+<h2>Internships and certifications</h2>
+<p class="lead">Practical training and verified learning. Dates and certificate links can be added once confirmed.</p>
+<h3 class="sub">Internships</h3>
+<div class="tl" id="interns"></div>
+<h3 class="sub">Certifications and training</h3>
+<div class="tl" id="certs"></div>
+</div></section>
+
+<section id="education"><div class="wrap">
+<h2>Education</h2>
+<div class="item"><h3>B.Tech, Computer Science and Engineering</h3><p>Raghu Engineering College · Graduated 2026 · CGPA: 8.7</p></div>
+</div></section>
+
+<section id="profiles"><div class="wrap">
+<h2>See the source code</h2>
+<p class="lead">My repositories and profiles show the work behind each project.</p>
+<div class="btns">
+<a class="btn" href="https://github.com/Meghanamajji" target="_blank" rel="noopener">GitHub</a>
+<a class="btn" href="https://www.linkedin.com/in/meghana-majji-08634a2b2" target="_blank" rel="noopener">LinkedIn</a>
+<a class="btn" href="https://g.dev/Meghana_Majji" target="_blank" rel="noopener">Google Developer Profile</a>
+</div></div></section>
+
+<section id="contact"><div class="wrap"><div class="contact">
+<h2>Let’s build something meaningful.</h2>
+<p>I’m open to entry-level software engineering opportunities where I can contribute to practical projects, strengthen my engineering skills, and grow as a developer.</p>
+<div class="btns">
+<a class="btn" href="https://github.com/Meghanamajji" target="_blank" rel="noopener">GitHub</a>
+<a class="btn" href="https://www.linkedin.com/in/meghana-majji-08634a2b2" target="_blank" rel="noopener">LinkedIn</a>
+</div>
+<p class="mail">Email: <span id="email"></span> · Phone: <a href="tel:7601087983">760-108-7983</a></p>
+</div></div></section>
+</main>
+<footer><div class="wrap">© <span id="yr"></span> Meghana Majji</div></footer>
+
+<script>
+/* ===== EDIT THESE ===== */
+const EMAIL = "meghanamajji007@gmail.com";
+const PHONE = "760-108-7983";
+/* ====================== */
+const GH="https://github.com/Meghanamajji";
+const P=[
+{n:"AI-First CRM",c:"Backend Engineering · AI Integration",big:1,v:"graph",repo:"",
+ prob:"Healthcare professional contacts and interactions are hard to keep organized in one place.",
+ sol:"A CRM backend that stores professional records and interactions, with AI-assisted workflows on top.",
+ t:["Python","FastAPI","SQLAlchemy","REST APIs","LangGraph","Groq"],
+ f:["REST API design with FastAPI","Database models and operations with SQLAlchemy","Modular backend structure","AI workflow integration using LangGraph and Groq"],
+ s:"Some functionality is still under development."},
+{n:"Receipt and Invoice Digitizer",c:"AI · OCR · Document Automation",big:1,v:"doc",repo:"",
+ prob:"Typing receipt and invoice details by hand is repetitive and error-prone.",
+ sol:"A Python app that reads uploaded receipts and invoices and turns them into structured data that is easier to review.",
+ t:["Python","Streamlit","OCR","AI integration"],
+ f:["Document upload","OCR-based text extraction","Structured results","Search, dashboard and data export (where implemented in the repository)"]},
+{n:"Test Case Automation",c:"Software Testing · Test Automation",v:"check",repo:"",
+ prob:"Repeating the same manual test cases takes time and lets regressions slip through.",
+ sol:"Automated test cases that run checks on software behavior without repeated manual effort.",
+ t:["See repository for framework and language"],
+ f:["Reusable test cases","Assertions on expected behavior","Test reporting (confirm against repository)"]},
+{n:"Retail Object Detection App",c:"Computer Vision · AI/ML",v:"boxes",repo:"",
+ prob:"Finding items in retail images by eye does not scale.",
+ sol:"An application that applies object detection to locate and label supported objects in retail-related images or video.",
+ t:["Python","Computer vision","Object detection"],
+ f:["Detection of supported object classes","Image and video processing pipeline","Bounding-box output"]},
+{n:"Potato Leaf Disease Detection",c:"Computer Vision · Machine Learning · Agriculture",v:"leaf",repo:"https://github.com/Meghanamajji/potato-leaf-disease-detection",
+ prob:"Telling potato leaf conditions apart from photos is a good applied image-classification problem.",
+ sol:"A model that classifies potato leaf images into supported disease categories.",
+ t:["Python","Machine learning","Image processing"],
+ f:["Image preprocessing","Classification into supported categories","Prediction on new leaf images"],
+ s:"Educational project. Not validated for real agricultural use."},
+{n:"Diabetes Prediction",c:"Machine Learning · Predictive Analytics",v:"scatter",repo:"https://github.com/Meghanamajji/diabetes-prediction",
+ prob:"Learning how a supervised model can estimate diabetes likelihood from patient measurements.",
+ sol:"An SVM classifier trained on scaled tabular data that predicts whether a person is likely to have diabetes.",
+ t:["Python","pandas","scikit-learn","SVM","StandardScaler"],
+ f:["Data preparation with pandas","Feature scaling with StandardScaler","SVM model training","Prediction workflow for new inputs"],
+ s:"Educational project. Not a clinically validated diagnostic tool."},
+{n:"NextGen 3D VR Hand Gesture Recognition",c:"Computer Vision · Gesture Recognition · 3D Interaction",v:"hand",repo:"",
+ prob:"Controlling a 3D scene with natural hand movement instead of a keyboard or mouse.",
+ sol:"A team project that detects hand landmarks from a camera and maps recognized gestures to actions in a 3D environment.",
+ t:["Python","OpenCV","MediaPipe","Panda3D"],
+ f:["Hand landmark detection","Gesture recognition","Gesture-driven 3D interaction"],
+ s:"Team project. I was the team lead and handled the 3D object part of the project."}
+];
+const S={
+ stroke:'stroke="#7c8cff" stroke-width="2" fill="none"',
+ v:{
+ graph:'<svg viewBox="0 0 200 100"><g stroke="#7c8cff" stroke-width="2"><path d="M100 50L40 24M100 50L160 24M100 50L40 78M100 50L160 78"/></g><g fill="#12151c" stroke="#22d3ee" stroke-width="2"><circle cx="100" cy="50" r="14"/><circle cx="40" cy="24" r="9"/><circle cx="160" cy="24" r="9"/><circle cx="40" cy="78" r="9"/><circle cx="160" cy="78" r="9"/></g></svg>',
+ doc:'<svg viewBox="0 0 200 100"><rect x="60" y="8" width="80" height="84" rx="8" fill="#12151c" stroke="#7c8cff" stroke-width="2"/><g stroke="#8b5cf6" stroke-width="3" stroke-linecap="round"><path d="M74 28h52M74 44h36M74 60h52M74 76h24"/></g></svg>',
+ check:'<svg viewBox="0 0 200 100"><g stroke="#7c8cff" stroke-width="2" fill="#12151c"><rect x="30" y="14" width="140" height="22" rx="6"/><rect x="30" y="42" width="140" height="22" rx="6"/><rect x="30" y="70" width="140" height="22" rx="6"/></g><g stroke="#22d3ee" stroke-width="3" fill="none" stroke-linecap="round"><path d="M42 25l5 5 9-10M42 53l5 5 9-10M42 81l5 5 9-10"/></g></svg>',
+ boxes:'<svg viewBox="0 0 200 100"><rect x="24" y="22" width="64" height="62" rx="4" '+'stroke="#22d3ee" stroke-width="2" stroke-dasharray="5 3" fill="none"/><rect x="104" y="12" width="72" height="44" rx="4" stroke="#8b5cf6" stroke-width="2" stroke-dasharray="5 3" fill="none"/><rect x="112" y="64" width="56" height="26" rx="4" stroke="#7c8cff" stroke-width="2" stroke-dasharray="5 3" fill="none"/></svg>',
+ leaf:'<svg viewBox="0 0 200 100"><path d="M100 90C50 80 40 40 100 10c60 30 50 70 0 80z" fill="#12151c" stroke="#22d3ee" stroke-width="2"/><path d="M100 90V24M100 44l-16-10M100 58l18-12M100 72l-14-9" stroke="#7c8cff" stroke-width="2" fill="none"/></svg>',
+ scatter:'<svg viewBox="0 0 200 100"><path d="M20 92L180 8" stroke="#7c8cff" stroke-width="2" stroke-dasharray="4 4"/><g fill="#22d3ee"><circle cx="40" cy="78" r="4"/><circle cx="70" cy="64" r="4"/><circle cx="60" cy="86" r="4"/></g><g fill="#8b5cf6"><circle cx="130" cy="30" r="4"/><circle cx="160" cy="22" r="4"/><circle cx="150" cy="46" r="4"/></g></svg>',
+ hand:'<svg viewBox="0 0 200 100"><g stroke="#7c8cff" stroke-width="2"><path d="M100 88L70 60M100 88L90 40M100 88L110 34M100 88L128 44M100 88L146 64M70 60L66 40M90 40L88 20M110 34L112 14M128 44L136 24"/></g><g fill="#22d3ee"><circle cx="100" cy="88" r="4"/><circle cx="70" cy="60" r="3"/><circle cx="90" cy="40" r="3"/><circle cx="110" cy="34" r="3"/><circle cx="128" cy="44" r="3"/><circle cx="146" cy="64" r="3"/><circle cx="66" cy="40" r="3"/><circle cx="88" cy="20" r="3"/><circle cx="112" cy="14" r="3"/><circle cx="136" cy="24" r="3"/></g></svg>'}
+};
+const esc=s=>s.replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
+document.getElementById("grid").innerHTML=P.map(p=>`
+<article class="card${p.big?" big":""}">
+<div class="vis" role="img" aria-label="Abstract illustration for ${esc(p.n)}">${S.v[p.v]}</div>
+<div class="body">
+<p class="cat">${esc(p.c)}</p><h3>${esc(p.n)}</h3>
+<p><b>Problem.</b> ${esc(p.prob)}</p>
+<p><b>Solution.</b> ${esc(p.sol)}</p>
+<ul class="chips">${p.t.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>
+<details><summary>Technical details</summary><ul>${p.f.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>${p.s?`<p class="status">${esc(p.s)}</p>`:""}</details>
+<div class="links"><a href="${p.repo||GH}" target="_blank" rel="noopener">${p.repo?"View source":"Find on GitHub"}<span class="sr" hidden> for ${esc(p.n)}</span></a></div>
+</div></article>`).join("");
+const SK=[["Programming","Python, SQL, Java fundamentals, C/C++ fundamentals"],["Backend development","FastAPI, REST APIs, SQLAlchemy"],["Databases","MySQL, SQLite, relational database fundamentals"],["AI/ML","scikit-learn, pandas, NumPy, matplotlib, machine learning, computer vision, OCR, data preprocessing, AI integrations"],["Web development","HTML, CSS, JavaScript fundamentals, React.js fundamentals"],["Tools and platforms","Git, GitHub, Streamlit, AWS fundamentals, Google Cloud fundamentals"]];
+document.getElementById("skills-grid").innerHTML=SK.map(([h,l])=>`<div class="skill"><h3>${h}</h3><ul class="chips">${l.split(", ").map(x=>`<li>${x}</li>`).join("")}</ul></div>`).join("");
+const D="https://drive.google.com/file/d/";
+const IN=[["Google for Developers","AI-ML Virtual Internship","April – June 2025 · 10 weeks. Data preprocessing, machine learning model building and AI applications.",D+"1Ta9DJY8tLXVfc2Xa_af-ST9Tsiqs8v-k/view?usp=sharing"],["AWS Academy","Cloud Virtual Internship","Oct – Dec 2024 · 10 weeks. Cloud computing foundations, deployment and cloud infrastructure management.",D+"1M0WYuUA6XLFyh9Q_qZZesrbj2ju7sOrR/view?usp=sharing"],["Infosys Springboard","AI/ML Internship","2-month internship, February – April.",""]];
+const CE=[["Anthropic","Claude 101",""],["NPTEL","Google Cloud Computing Foundations",D+"1B3GKNEVTyXU7qkox9tzKI3__CUaG4xRQ/view?usp=sharing"],["NPTEL","Foundation of Cloud IoT Edge ML",D+"1jXQterQFgNHZ9_2FzGFTfQ01wjkwAWXn/view?usp=drive_link"],["NPTEL","Programming in Java",D+"1B-xtQqXKKJHdnpVP3cNBaVmcAx7NtTbJ/view"],["NPTEL","Programming in C",D+"1AzR_rND7vGJ-xZL6QSLIzUBfiQFQ3VgW/view"],["Accenture (Forage)","Data Analytics and Visualization Job Simulation",D+"1AyzL7EFhJBt8iYmSlfC2vLr01opnmAJa/view?usp=drive_link"],["Infosys Springboard","Python Foundation Certification",D+"1e9Vcdgblb0VbnR02_Ctx6QodEW-wwgZS/view?usp=sharing"],["Infosys Springboard","Probability Distribution using Python",D+"1iTmFXmU2P7CAUjflSoBNx9YpocBcbl5q/view?usp=sharing"],["IBM","Python Basics for Data Science",D+"1jtJ2p-7dAiwE-oUVHIBaeUi36J6Z6E40/view?usp=sharing"],["AWS Academy","Cloud Foundations",D+"1QMab190eGb35k9Ongvzxoebt5MZgmx3r/view?usp=sharing"],["MathWorks","MATLAB",D+"1B6cHyJDPE5qsaXVcrb5Zj73LZ1qoSKRc/view?usp=sharing"]];
+document.getElementById("interns").innerHTML=IN.map(([o,r,d,l])=>`<div class="item"><h3>${o}</h3><p><b>${r}</b><br>${d?d:'<span class="ph">Dates and summary: add</span>'}${l?`<br><a href="${l}" target="_blank" rel="noopener" style="color:#aab8ff">View certificate</a>`:""}</p></div>`).join("");
+document.getElementById("yr").textContent=new Date().getFullYear();
+const em=document.getElementById("email");
+if(EMAIL){em.innerHTML='<a href="mailto:'+EMAIL+'">'+EMAIL+'</a>'}else{em.innerHTML='<span class="ph">[your professional email here]</span>'}
+</script>
+<style>.ph{color:#fbbf24}.sr{display:none}
+#gl{display:none;width:100%;aspect-ratio:11/10}.art.gl #gl{display:block}.art.gl svg{display:none}
+.grid{perspective:1200px}.card{transform-style:preserve-3d;transition:transform .25s ease,border-color .2s;will-change:transform}
+.card .vis{transform:translateZ(24px)}
+.item a{text-decoration:none}</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function(){
+document.getElementById('certs').innerHTML=CE.map(([o,t,l])=>`<div class="item"><h3>${t}</h3><p>${o}${l?`<br><a href="${l}" target="_blank" rel="noopener" style="color:#aab8ff">View certificate</a>`:'<br>Certificate of completion'}</p></div>`).join('');
+const still=matchMedia('(prefers-reduced-motion: reduce)').matches;
+/* 3D card tilt */
+if(!still&&matchMedia('(pointer:fine)').matches){document.querySelectorAll('.card').forEach(c=>{
+c.addEventListener('pointermove',e=>{const r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transform=`rotateY(${x*8}deg) rotateX(${-y*8}deg) translateY(-4px)`});
+c.addEventListener('pointerleave',()=>{c.style.transform=''});});}
+/* 3D hero */
+try{
+if(!window.THREE)return;
+const cv=document.getElementById('gl'),art=document.getElementById('art');
+const R=new THREE.WebGLRenderer({canvas:cv,alpha:true,antialias:true});
+const sc=new THREE.Scene(),cam=new THREE.PerspectiveCamera(45,1.1,.1,100);cam.position.z=8;
+const g=new THREE.Group();sc.add(g);
+const M=(c,o)=>new THREE.MeshBasicMaterial({color:c,wireframe:true,transparent:true,opacity:o});
+const ico=new THREE.Mesh(new THREE.IcosahedronGeometry(2.3,1),M(0x4f7cff,.55));
+const core=new THREE.Mesh(new THREE.OctahedronGeometry(1.1,0),M(0x8b5cf6,.9));
+g.add(ico,core);
+g.add(new THREE.Points(ico.geometry,new THREE.PointsMaterial({color:0x22d3ee,size:.09})));
+const rings=[];
+[[3.2,[1.2,0,0],0x22d3ee],[2.8,[.3,.9,0],0x8b5cf6],[3.6,[-.6,0,.5],0x4f7cff]].forEach(([rad,rot,col],i)=>{
+const rg=new THREE.Mesh(new THREE.TorusGeometry(rad,.014,8,140),new THREE.MeshBasicMaterial({color:col,transparent:true,opacity:.6}));
+rg.rotation.set(...rot);const s=new THREE.Mesh(new THREE.SphereGeometry(.13,16,16),new THREE.MeshBasicMaterial({color:col}));
+s.position.set(rad,0,0);rg.add(s);g.add(rg);rings.push([rg,.006+i*.004]);});
+let tx=0,ty=0;
+addEventListener('pointermove',e=>{tx=(e.clientY/innerHeight-.5)*.6;ty=(e.clientX/innerWidth-.5)*.9;});
+function size(){const w=art.clientWidth-28;R.setPixelRatio(Math.min(devicePixelRatio,2));R.setSize(w,w*10/11,false);}
+addEventListener('resize',size);
+art.classList.add('gl');size();
+let vis=true;new IntersectionObserver(e=>{vis=e[0].isIntersecting}).observe(art);
+function frame(){if(vis){ico.rotation.y+=.003;ico.rotation.x+=.0015;core.rotation.y-=.008;core.rotation.x+=.005;rings.forEach(([r,v])=>r.children[0]&&(r.rotation.z+=v));g.rotation.x+=(tx-g.rotation.x)*.04;g.rotation.y+=(ty-g.rotation.y)*.04;R.render(sc,cam);}if(!still)requestAnimationFrame(frame);}
+frame();
+}catch(e){document.getElementById('art').classList.remove('gl');}
+})();
+</script>
+</body>
+</html>
